@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Iframe4 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args)  {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/");
@@ -27,7 +27,13 @@ public class Iframe4 {
 		action.dragAndDrop(abc, dst).perform();
 		
 		driver.switchTo().defaultContent();
-		Thread.sleep(3000);
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
+		
 		driver.close();
 		
 		

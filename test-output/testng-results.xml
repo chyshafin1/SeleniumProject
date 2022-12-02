@@ -1,17 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T22:19:14 EST" name="Default suite" finished-at="2022-11-16T22:19:36 EST" duration-ms="21250">
+  <suite started-at="2022-12-01T19:54:06 EST" name="Default suite" finished-at="2022-12-01T19:54:29 EST" duration-ms="22637">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@2e222612]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-16T22:19:14 EST" name="Default test" finished-at="2022-11-16T22:19:36 EST" duration-ms="21250">
-      <class name="Learn_Selenium_Interface.CreateLead">
-        <test-method signature="createLead()[pri:0, instance:Learn_Selenium_Interface.CreateLead@306cf3ea]" started-at="2022-11-16T22:19:15 EST" name="createLead" finished-at="2022-11-16T22:19:36 EST" duration-ms="21195" status="PASS">
+    <test started-at="2022-12-01T19:54:06 EST" name="Default test" finished-at="2022-12-01T19:54:29 EST" duration-ms="22637">
+      <class name="steps.RunnerFile">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:steps.RunnerFile@2e222612]" started-at="2022-12-01T19:54:06 EST" name="setUpClass" finished-at="2022-12-01T19:54:06 EST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLead -->
-      </class> <!-- Learn_Selenium_Interface.CreateLead -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@2e222612]" started-at="2022-12-01T19:54:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-01T19:54:15 EST" duration-ms="9210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001_login and logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Testleaf Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@2e222612]" started-at="2022-12-01T19:54:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-01T19:54:23 EST" duration-ms="7439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001_login and logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Testleaf Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@2e222612]" started-at="2022-12-01T19:54:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-01T19:54:29 EST" duration-ms="5697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC002_login and logout for faliure"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Testleaf Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:steps.RunnerFile@2e222612]" started-at="2022-12-01T19:54:29 EST" name="tearDownClass" finished-at="2022-12-01T19:54:29 EST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- steps.RunnerFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

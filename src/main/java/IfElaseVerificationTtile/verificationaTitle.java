@@ -44,8 +44,16 @@ public class verificationaTitle {
 	    	driver.findElementByName("id").sendKeys("25365");
 
 	      	driver.findElementByClassName("x-btn-text").click();
-	      	WebElement ta = driver.findElementByClassName("x-btn-text");
+	      	WebElement ta = driver.findElementByClassName("x-paging-info");
 	      	ta.getText();
+	      	System.out.println(ta.getText());
+	      	//System.out.println("View Page Title= "+ta);
+	      	
+	      	if(ta.getText().equals("No records to display")) {
+	      		System.out.println("Matched");
+	      	}else {
+	      		System.out.println("Not Matched");
+	      	}
 	      	
 	    	System.out.println("Test Complete");
 			

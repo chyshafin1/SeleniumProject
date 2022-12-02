@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Learn_Selenium_Interface.CreateLead">
+      <class name="steps.RunnerFile">
         <methods>
-          <include name="createLead"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Learn_Selenium_Interface.CreateLead -->
+      </class> <!-- steps.RunnerFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
